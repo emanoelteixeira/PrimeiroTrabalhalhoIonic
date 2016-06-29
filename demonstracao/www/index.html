@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-nav-bar class="bar-royal">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+
+    <ion-nav-view></ion-nav-view>
+
+
+    <script id="templates/tabs.html" type="text/ng-template">
+      <ion-tabs class="tabs-icon-top tabs-royal">
+
+        <ion-tab title="Home" icon="ion-home" href="#/tab/home">
+          <ion-nav-view name="home-tab"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="Contato" icon="ion-ios-world" ui-sref="tabs.contact">
+          <ion-nav-view name="contact-tab"></ion-nav-view>
+        </ion-tab>
+
+      </ion-tabs>
+    </script>
+
+    <script id="templates/home.html" type="text/ng-template">
+      <ion-view view-title="Home">
+        <ion-content class="padding">
+             <div class="list">
+
+    <a class="item item-thumbnail-left" href="#">
+      <img src="img/chiq.jpg">
+      <h2>Chiquinho Sorvetes</h2>
+      <p>Um Mundo de Sorvetes</p>
+    </a>
+    <a class="item item-thumbnail-left" href="#">
+      <img src="img/ara.jpg">
+      <h2>Arab &prime; s</h2>
+      <p>Delivery Esfirras (44)3233-3107</p>
+    </a>
+        <a class="item item-thumbnail-left" href="#">
+      <img src="img/hot.jpg">
+      <h2>Hot Dog & Cia</h2>
+      <p>Diversidade de Sabores</p>
+    </a>
+        <a class="item item-thumbnail-left" href="#">
+      <img src="img/mc.jpg">
+      <h2>McDonald &prime; s</h2>
+      <p>Ir ao McDonald &prime; s e pedir salada é a mesma coisa que ir ao puteiro e pedir um ABRAÇO!!</p>
+    </a>
+        <a class="item item-thumbnail-left" href="#">
+      <img src="img/bk.jpg">
+      <h2>Burger King</h2>
+      <p>O Jogo é Americano mas o Hamburguer é Brasileiro</p>
+    </a>
+</div>
+        </ion-content>
+      </ion-view>
+        </ion-content>
+      </ion-view>
+    </script>
+
+
+    <script id="templates/contact.html" type="text/ng-template">
+      <ion-view title="Contato">
+        <ion-content>
+        <ion-list> 
+        <ion-item class="item-icon-right">
+        @VitorTymniak<i class="icon ion-social-whatsapp-outline"></i>
+        </ion-item>
+        <ion-item class="item-icon-right">
+        @LucasEmanoel<i class="icon ion-social-whatsapp-outline"></i>
+        </ion-item>
+         </ion-list>
+       
+        </ion-content>
+      </ion-view>
+    </script>
+
+  </body>
+</html>
